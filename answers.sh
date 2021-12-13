@@ -14,7 +14,7 @@ CREATE TABLE graduates(
     Age INTEGER,
     Gender TEXT,
     Points INTEGER,
-    Graduation date
+    Graduation TEXT
 );
 
 INSERT INTO graduates(Name,Age,Gender,Points)
