@@ -46,3 +46,20 @@ on employees.Company = companies.name WHERE companies.date < 2000;
 SELECT companies.name FROM employees
 inner join companies
 on employees.Company = companies.name WHERE employees.Role = 'Graphic Designer';
+
+# /* Count and Filter */
+# 1
+SELECT Name FROM students WHERE Points=(SELECT max(points) FROM students);
+# 2
+SELECT avg(Points) FROM students;
+#3
+SELECT COUNT(ID)
+FROM students 
+WHERE Points = 500;
+#4 
+SELECT name FROM students
+WHERE name LIKE '%s%';
+#5
+SELECT name
+FROM students
+ORDER BY points DESC; 
